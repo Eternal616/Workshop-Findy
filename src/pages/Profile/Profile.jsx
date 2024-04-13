@@ -1,8 +1,8 @@
-import React from 'react'
+import './Profile.scss'
 
 const Profile = () => {
   return (
-    <div>Profile</div>
+    <div className='logo'>Profile</div>
   )
 }
 

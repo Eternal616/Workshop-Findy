@@ -2,7 +2,7 @@ import './AddPost.scss';
 
 const AddPost = () => {
   return (
-    <div>AddPost</div>
+    <div className='addPost'>AddPost</div>
   )
 }
 

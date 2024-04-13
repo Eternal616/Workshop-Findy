@@ -1,7 +1,5 @@
-@import url('../../styles/universal.scss');
-@import url('../../styles/variables.scss');
-@import url('../../styles/mixin.scss');
+@import '../../styles/variables.scss';
 
-div {
-    background-color: rebeccapurple;
+.addPost {
+    background-color: $logo-salmon;
 }
