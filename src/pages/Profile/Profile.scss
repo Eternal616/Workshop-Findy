@@ -5,4 +5,8 @@ body {
     width: 100%;
     height: 100vh;
     background: $bg-color-primary;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

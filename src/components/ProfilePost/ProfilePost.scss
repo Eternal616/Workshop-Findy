@@ -1,0 +1,41 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixin.scss';
+
+.main {
+    @include banner-dimensions(100%, 66vh);
+    transform: translate(0%, 34%);
+    border-radius: 30px 30px 0 0;
+    background-color: $color-primary;
+    box-shadow: 0 1px 4px rgba($logo-pink, 0.592);
+    &__filter {
+        display: flex;
+        justify-content: space-evenly;
+        padding: .5rem;
+
+        list-style: none;
+        font-family: $font-Subtitle;
+        font-weight: $font-Subtitle-weight;
+        font-size: 1rem;
+        .main__filter-link {
+            text-decoration: none;
+            color: inherit;
+            &:hover, &--active {
+                border-bottom: 3px solid $logo-salmon;
+            }
+        }
+        
+    }
+    &__post {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: .3rem;
+        &-container {
+            @include banner-dimensions(45%, 15rem);
+            cursor: pointer;
+            object-fit: cover;
+            border-radius: 1rem;
+            box-shadow: 0 1px 4px rgba($logo-pink, 0.592);
+        }
+    }
+}

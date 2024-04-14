@@ -2,7 +2,7 @@
 @import '../../styles/mixin.scss';
 
 .header {
-    @include banner-dimensions(100%, 227px);
+    @include banner-dimensions(99.7%, 227px);
     position: relative;
 
     &__banner {

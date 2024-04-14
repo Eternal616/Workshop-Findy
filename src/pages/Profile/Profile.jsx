@@ -1,11 +1,13 @@
-import HeaderProfile from '../../components/HeaderProfile/HeaderProfile'
-import './Profile.scss'
+import HeaderProfile from '../../components/HeaderProfile/HeaderProfile';
+import ProfilePost from '../../components/ProfilePost/ProfilePost';
+import './Profile.scss';
 
 
 const Profile = () => {
   return (
     <>
       <HeaderProfile/>
+      <ProfilePost/>
     </>
   )
 }

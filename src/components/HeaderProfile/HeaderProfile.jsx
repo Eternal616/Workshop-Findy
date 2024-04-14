@@ -4,7 +4,6 @@ import { FaAngleLeft, FaEllipsis } from "react-icons/fa6";
 
 const HeaderProfile = () => {
   return (
-    <>
       <IconContext.Provider value={{ size: "2rem", color: "#FF7674" }}>
         <header className="header">
           <section>
@@ -48,7 +47,6 @@ const HeaderProfile = () => {
           </section>
         </header>
       </IconContext.Provider>
-    </>
   );
 };
 
