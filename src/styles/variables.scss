@@ -7,9 +7,11 @@ $logo-pink:  #FF74FC;
 $logo-salmon: #FF7674;
 
 // Colores de la app
-$bg-color: linear-gradient(to right top, #f98280, #fe98ab, #fbb1cf, #f5cbe9, #f3e3f8, #706e71, #f4e7f8, #f5e9f8, #f5d7ec, #f9c4d9, #fbb2bf, #f9a19f);;
+$bg-color-primary: radial-gradient(50% 50% at 50% 50%, rgba(255, 118, 116, 0.3) 0%, rgba(255, 118, 116, 0) 100%);
+$bg-color: linear-gradient(136.44deg, #FF7674 10.94%, #FF74B7 35.65%, #FF74FC 58.74%, #FFBC74 88.72%);
 $color-primary:#FFFFFF;
-$color-secundary: #FF7674;
+$color-secundary: linear-gradient(92.69deg, #EB5E5C -0.64%, #FF7674 101.09%);
+;
 $color-tertiary: #2F2F2F;
 
 // Fuentes

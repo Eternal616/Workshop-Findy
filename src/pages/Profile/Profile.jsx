@@ -1,8 +1,12 @@
+import HeaderProfile from '../../components/HeaderProfile/HeaderProfile'
 import './Profile.scss'
+
 
 const Profile = () => {
   return (
-    <div className='logo'>Profile</div>
+    <>
+      <HeaderProfile/>
+    </>
   )
 }
 
