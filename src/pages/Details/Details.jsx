@@ -1,8 +1,11 @@
+import HeaderDetails from '../../components/HeaderDetails/HeaderDetails'
 import './Details.scss'
 
 const Details = () => {
   return (
-    <div className='details'>Details</div>
+    <>
+      <HeaderDetails/>
+    </>
   )
 }
 

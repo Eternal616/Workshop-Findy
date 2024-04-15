@@ -1,0 +1,84 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixin.scss";
+
+.headerDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &__banner {
+    @include banner-dimensions(100vw, 60vh);
+    &-img {
+      @include banner-dimensions(100%, 100%);
+      object-fit: cover;
+      border-radius: 0 0 30px 30px;
+      filter: brightness(0.64);
+    }
+  }
+
+  &__navegation {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__container {
+    @include banner-dimensions(17.375rem, 4rem);
+    border-radius: 25px;
+    background-color: $color-primary;
+    box-shadow: 0 1px 4px rgba($color-tertiary, 0.592);
+    position: absolute;
+    top: 90%;
+
+    &-group {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: .5rem;
+      width: 90%;
+      margin: .5rem 0 0 .8rem;
+    }
+    &-profile {
+      @include banner-dimensions(3rem, 3rem);
+      border-radius: 50%;
+      background: $bg-color;
+      margin-left: .2rem;
+      &-img {
+        @include banner-dimensions(2.6rem, 2.7rem);
+        margin: .1rem .1rem 0 .1rem;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+    &-description {
+      width: 31%;
+      &-title {
+        font-size: .75rem;
+        font-family: $font-title;
+        font-weight: $font-title-weight;
+      }
+    }
+    &-icons {
+      display: flex;
+      justify-content: space-evenly;
+      width: 40%;
+      gap: 1rem;
+      margin-right: .5rem;
+      &-subtitle {
+        font-size: .75rem;
+        font-family: $font-Subtitle;
+        font-weight: $font-Subtitle-weight;
+      }
+    }
+  }
+}
+
+.react-icons {
+  cursor: pointer;
+}
