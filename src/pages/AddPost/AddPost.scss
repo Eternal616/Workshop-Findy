@@ -13,7 +13,7 @@
     font-family: $font-title;
     font-weight: $font-title-weight;
     font-size: 1.5rem;
-    color: $color-tertiary;
+    color: #333;
     padding-top: 2rem;
 }
 
@@ -42,11 +42,13 @@
     }
   }
   &__img {
+    object-fit: cover;
     width: 100%;
-    max-width: 12.5rem;
-    height: 12.5rem;
+    max-width: 11.5rem;
+    height: 11.5rem;
     border-radius: 10%;
     margin-bottom: 1rem;
+    border: 1px solid #ccc;
   }
   &__input {
     &-img {
