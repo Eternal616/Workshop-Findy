@@ -14,11 +14,13 @@ const MainDetails = () => {
             <p className="mainDetails__paragraph-description">
               ¡Félix ya ha superado los 20.000.000 (20 millones) de seguidores
               en Instagram! Es el primer artista de JYP yKpop Idol de cuarta
-              generación en superar este hito. 🔗
-              <a href="http://instagram.com/yong.lixx">Publicación</a>
+              generación en superar este hito. 
+            </p>
+            <p className="mainDetails__paragraph-link">🔗
+              <a href="http://instagram.com/yong.lixx"> http://instagram.com/yong.lixx </a>
             </p>
             <p className="mainDetails__paragraph-hashtags">
-              —🧸 <a href="#">#StrayKids</a> <a href="#">#스트레이키즈</a>{" "}
+              🧸 <a href="#">#StrayKids</a> <a href="#">#스트레이키즈</a>{" "}
               <a href="#">#スキズ</a>
             </p>
           </section>
