@@ -1,5 +1,102 @@
 @import '../../styles/variables.scss';
 
-.addPost {
-    background-color: $logo-salmon;
+%input-styles {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
+
+.addPost__title {
+    font-family: $font-title;
+    font-weight: $font-title-weight;
+    font-size: 1.5rem;
+    color: #333;
+    padding-top: 2rem;
+}
+
+.form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.25rem;
+
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+    font-family: $font-Subtitle;
+    font-weight: $font-Subtitle-weight;
+    color: rgba($color-tertiary, .7);
+    font-size: 1rem;
+    margin-bottom: .625rem;
+    &-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-tags {
+        width: 17.2669rem;
+        padding-bottom: .63rem;
+    }
+  }
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 11.5rem;
+    height: 11.5rem;
+    border-radius: 10%;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+  }
+  &__input {
+    &-img {
+        display: none;
+    }
+    &-title {
+        @extend %input-styles;
+    }
+    &-text-description {
+        @extend %input-styles;
+        height: 6.25rem;
+    }
+    &-hastags {
+        @extend %input-styles;
+    }
+    &-link {
+        @extend %input-styles;
+    }
+  }
+  &__list {
+    &-container {
+        margin-top: .3125rem;
+        padding: 0;
+        list-style-type: none;
+        gap: .5rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      &-item {
+        background-color: #f0f0f0;
+        color: #333;
+        font-size: .875rem;
+        padding: 5px 10px;
+        margin-right: .3125rem;
+        border-radius: .1875rem;
+      }
+  }
+  &__button {
+    display: block;
+    width: 100%;
+    padding: .625rem;
+    background: $logo-salmon;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+

@@ -1,0 +1,59 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixin.scss';
+
+.mainDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__paragraph {
+        transform: translate(0%, 30%);
+        @include banner-dimensions(92%, auto);
+        max-height: 8.92rem;
+        overflow-y: scroll;
+        text-align: justify;
+        &-title {
+            font-family: $font-title;
+            font-weight: $font-title-weight;
+            font-size: 1.2rem;
+            padding-bottom: .5rem;
+        } 
+        &-description, &-link {
+            padding-bottom: .5rem;
+        }
+    }
+    &__visitor {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+
+        margin-top: 16%;
+        margin-left: auto;
+        margin-right: auto;
+        &-img {
+            @include banner-dimensions(2rem, 2rem);
+            border-radius: 50%;
+            box-shadow: 0 1px 4px rgba($color-tertiary, 0.592);
+        }
+            &-comment-input {
+                border: none;
+                outline: none;
+                background: $color-primary;
+                width: 85%;
+                height: 2rem;
+                border-radius: 1.25rem;
+                padding-left: 1rem;
+                box-shadow: 0 2px 4px rgba($color-tertiary, 0.1)
+            }
+        ::placeholder {
+            padding-left: .4rem;
+        }
+    }
+}
+
+.icon {
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 15%;
+}
