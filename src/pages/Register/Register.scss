@@ -1,0 +1,49 @@
+@import '../../styles/variables.scss';
+
+.register-container h1{
+    font-size: 48px;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.register-form {
+    background: linear-gradient(to bottom right, #e00588, #ff6600);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+  
+    label {
+      color: #fff;
+    }
+  
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 20px 0;
+      border-radius: 5px;
+      border: none;
+    //   margin-top: 3rem;
+    }
+  
+    button {
+      background-color: #fff;
+      color: #ff6600;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      :hover{
+        opacity: .7;
+      }
+    }
+  
+    .error {
+      color: rgb(131, 231, 244);
+    }
+  }

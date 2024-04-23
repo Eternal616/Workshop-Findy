@@ -1,0 +1,78 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixin.scss';
+
+.header {
+    @include banner-dimensions(99.7%, 227px);
+    position: relative;
+
+    &__banner {
+        @include banner-dimensions(100%, 100%);
+        object-fit: cover;
+        &-icon {
+            width: 90%;
+            
+            position: absolute;
+            top: 20%;
+            left: 50%; 
+            transform: translate(-50%, -50%);
+           
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__profile {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        position: relative;
+        width: auto;
+        height: 40%;
+        &-contImg {
+            @include banner-dimensions(4.5rem, 4.5rem);
+            border-radius: 50%;
+            background: $bg-color;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: .4rem;
+
+            position: absolute;
+            transform: translate(-52%, -72%);
+        }
+        &-personalInfo {
+            width: 8rem;
+            &--title {
+                font-family: $font-title;
+                font-weight: $font-title-weight;
+                font-size: 1rem;
+            }
+            &--description {
+                font-size: .75rem;
+            }
+        }
+        &-img {
+            @include banner-dimensions(4.1rem, 4.1rem);
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: .2rem;
+            margin-left: .02rem;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-around;
+        &-button {
+            background-color: $bg-color-primary;
+            width: 10.4rem;
+            height: 2.1875rem;
+            font-size: 1.25rem;
+            color: $color-primary;
+            background: $color-secundary;
+            border-radius: .625rem;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
