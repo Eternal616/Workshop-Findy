@@ -1,8 +1,8 @@
-import React from 'react'
+import './NavigationBar.scss'
 
 const NavigationBar = () => {
   return (
-    <div>NavigationBar</div>
+    <div className='nb'>NavigationBar</div>
   )
 }
 
