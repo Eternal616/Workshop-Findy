@@ -1,4 +1,8 @@
 @import '../../../styles/variables.scss';
+@mixin banner-dimensions($width, $height) {
+  width: $width;
+  height: $height;
+}
 
 .navbar {
     width: 428px;
